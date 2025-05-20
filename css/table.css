@@ -1,0 +1,108 @@
+.table-container {
+    margin: 30px 0;
+    padding: 30px;
+    border: 1px solid #E1E1E1;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    transition: all 0.3s ease;
+}
+
+.table-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.table th,
+.table td {
+    width: 18%;
+}
+.table th:nth-child(2),
+.table td:nth-child(2) {
+    width: 27%;
+}
+.table th:nth-child(3),
+.table td:nth-child(3),
+.table th:nth-child(4),
+.table td:nth-child(4),
+.table th:nth-child(5),
+.table td:nth-child(5) {
+    width: 18.33%;
+}
+.table td {
+    padding: 0.50rem;
+    vertical-align: middle;
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    text-align: center;
+    line-height: 1.6;
+    transition: all 0.2s ease-in-out;
+}
+
+.table audio {
+    width: 220px;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+}
+
+.table .text-content {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #495057;
+    line-height: 1.5;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    background-color: #f8f9fa;
+    border-top: 2px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 700;
+    color: #212529;
+    /* text-transform: uppercase; */
+    font-size: 1.1em;
+    letter-spacing: 0.8px;
+    padding: 1rem 0.75rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    
+    .table th,
+    .table td {
+        padding: 0.75rem;
+    }
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
